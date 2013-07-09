@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
   //response.send('Hello World from index.html');
 //});
 
-fs.writeFile('index.html');
+fs.writeFileSync('index.html');
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
